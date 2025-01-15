@@ -4,11 +4,16 @@
 
 
         <table class="table table-bordered">
-            <tr>
+            <thead>
+                <tr>
                 <th>Title</th>
                 <th>Details</th>
                 <th>Action</th>
             </tr>
+
+            </thead>
+          
+          <tbody>
             <tr v-for="x in posts" :key="x.id">
                 <td>{{ x.title }}</td>
                 <td>{{ x.body }}</td>
@@ -18,6 +23,7 @@
                    
                 </td>
             </tr>
+          </tbody>
         </table>
 
 
